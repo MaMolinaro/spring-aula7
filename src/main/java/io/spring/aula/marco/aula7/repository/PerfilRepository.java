@@ -15,4 +15,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface PerfilRepository extends MongoRepository<Perfil, String> {
     List<Perfil> findByNomeLikeIgnoreCase(String nome);
+    Perfil findByNome(String nome);
 }
